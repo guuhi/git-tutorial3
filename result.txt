@@ -1,0 +1,386 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Whitney> cd '.\Documents\MINE\CODING\Git Practice\'
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice> cd .\git-tutorial3\
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git innit
+git: 'innit' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git init
+Initialized empty Git repository in C:/Users/Whitney/Documents/MINE/CODING/Git Practice/git-tutorial3/.git/
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git commit -m 'Version 1'
+[master (root-commit) 1f59c20] Version 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git cm 'Version 2'
+[master 3db3bc2] Version 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git cm 'Version 3'
+[master 8c1a5fc] Version 3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5 (HEAD -> master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+|
+* commit 1f59c20d7fc6989c5bec02a2d85cc8006cedcae5
+  Author: guuhi <winterlab04@gmail.com>
+  Date:   Thu May 2 01:45:46 2024 +0700
+
+      Version 1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git branch feature1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5 (HEAD -> master, feature1)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+|
+* commit 1f59c20d7fc6989c5bec02a2d85cc8006cedcae5
+  Author: guuhi <winterlab04@gmail.com>
+  Date:   Thu May 2 01:45:46 2024 +0700
+
+      Version 1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git checkout feature1
+Switched to branch 'feature1'
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5 (HEAD -> feature1, master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+|
+* commit 1f59c20d7fc6989c5bec02a2d85cc8006cedcae5
+  Author: guuhi <winterlab04@gmail.com>
+  Date:   Thu May 2 01:45:46 2024 +0700
+
+      Version 1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git cm 'Feature commit 1'
+[feature1 bd25230] Feature commit 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit bd252304b042c30bab3e1933405e0a46663ad8f1 (HEAD -> feature1)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:30 2024 +0700
+|
+|     Feature commit 1
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5 (master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+|
+* commit 1f59c20d7fc6989c5bec02a2d85cc8006cedcae5
+  Author: guuhi <winterlab04@gmail.com>
+  Date:   Thu May 2 01:45:46 2024 +0700
+
+      Version 1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git cm 'Feature commit 2'
+[feature1 bf5be18] Feature commit 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit bf5be18997ca0e91b286160df7e88a391026011f (HEAD -> feature1)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:59 2024 +0700
+|
+|     Feature commit 2
+|
+* commit bd252304b042c30bab3e1933405e0a46663ad8f1
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:30 2024 +0700
+|
+|     Feature commit 1
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5 (master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+|
+* commit 1f59c20d7fc6989c5bec02a2d85cc8006cedcae5
+  Author: guuhi <winterlab04@gmail.com>
+  Date:   Thu May 2 01:45:46 2024 +0700
+
+      Version 1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3>
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git checkout master
+Switched to branch 'master'
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit bf5be18997ca0e91b286160df7e88a391026011f (feature1)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:59 2024 +0700
+|
+|     Feature commit 2
+|
+* commit bd252304b042c30bab3e1933405e0a46663ad8f1
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:30 2024 +0700
+|
+|     Feature commit 1
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5 (HEAD -> master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+|
+* commit 1f59c20d7fc6989c5bec02a2d85cc8006cedcae5
+  Author: guuhi <winterlab04@gmail.com>
+  Date:   Thu May 2 01:45:46 2024 +0700
+
+      Version 1
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git cm 'Bug fix'
+[master ba28532] Bug fix
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bugfix
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit ba28532e836dd09c2a85ad8eb166512e488188b8 (HEAD -> master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:51:44 2024 +0700
+|
+|     Bug fix
+|
+| * commit bf5be18997ca0e91b286160df7e88a391026011f (feature1)
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:49:59 2024 +0700
+| |
+| |     Feature commit 2
+| |
+| * commit bd252304b042c30bab3e1933405e0a46663ad8f1
+|/  Author: guuhi <winterlab04@gmail.com>
+|   Date:   Thu May 2 01:49:30 2024 +0700
+|
+|       Feature commit 1
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git checkout feature1
+Switched to branch 'feature1'
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit ba28532e836dd09c2a85ad8eb166512e488188b8 (master)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:51:44 2024 +0700
+|
+|     Bug fix
+|
+| * commit bf5be18997ca0e91b286160df7e88a391026011f (HEAD -> feature1)
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:49:59 2024 +0700
+| |
+| |     Feature commit 2
+| |
+| * commit bd252304b042c30bab3e1933405e0a46663ad8f1
+|/  Author: guuhi <winterlab04@gmail.com>
+|   Date:   Thu May 2 01:49:30 2024 +0700
+|
+|       Feature commit 1
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+|
+* commit 3db3bc2662b01a2535ab9f76aa784ed7097752f2
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:00 2024 +0700
+|
+|     Version 2
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git cm "Feature done"
+[feature1 6b54a08] Feature done
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit 6b54a0834e299fa3dfd74be62cacb9f0042acbcf (HEAD -> feature1)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:55:34 2024 +0700
+|
+|     Feature done
+|
+* commit bf5be18997ca0e91b286160df7e88a391026011f
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:59 2024 +0700
+|
+|     Feature commit 2
+|
+* commit bd252304b042c30bab3e1933405e0a46663ad8f1
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:30 2024 +0700
+|
+|     Feature commit 1
+|
+| * commit ba28532e836dd09c2a85ad8eb166512e488188b8 (master)
+|/  Author: guuhi <winterlab04@gmail.com>
+|   Date:   Thu May 2 01:51:44 2024 +0700
+|
+|       Bug fix
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git checkout master
+Switched to branch 'master'
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+* commit 6b54a0834e299fa3dfd74be62cacb9f0042acbcf (feature1)
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:55:34 2024 +0700
+|
+|     Feature done
+|
+* commit bf5be18997ca0e91b286160df7e88a391026011f
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:59 2024 +0700
+|
+|     Feature commit 2
+|
+* commit bd252304b042c30bab3e1933405e0a46663ad8f1
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:49:30 2024 +0700
+|
+|     Feature commit 1
+|
+| * commit ba28532e836dd09c2a85ad8eb166512e488188b8 (HEAD -> master)
+|/  Author: guuhi <winterlab04@gmail.com>
+|   Date:   Thu May 2 01:51:44 2024 +0700
+|
+|       Bug fix
+|
+* commit 8c1a5fcafd1bad1df3009f21e24a4c12cde7abb5
+| Author: guuhi <winterlab04@gmail.com>
+| Date:   Thu May 2 01:46:14 2024 +0700
+|
+|     Version 3
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git merge feature1 -m "Merge Feature 1"
+Merge made by the 'ort' strategy.
+ feature | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+*   commit 7d43bcca1bd1ff55ad07f7eb2a716abaa5f7a849 (HEAD -> master)
+|\  Merge: ba28532 6b54a08
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:58:45 2024 +0700
+| |
+| |     Merge Feature 1
+| |
+| * commit 6b54a0834e299fa3dfd74be62cacb9f0042acbcf (feature1)
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:55:34 2024 +0700
+| |
+| |     Feature done
+| |
+| * commit bf5be18997ca0e91b286160df7e88a391026011f
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:49:59 2024 +0700
+| |
+| |     Feature commit 2
+| |
+| * commit bd252304b042c30bab3e1933405e0a46663ad8f1
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:49:30 2024 +0700
+| |
+| |     Feature commit 1
+| |
+* | commit ba28532e836dd09c2a85ad8eb166512e488188b8
+|/  Author: guuhi <winterlab04@gmail.com>
+|   Date:   Thu May 2 01:51:44 2024 +0700
+|
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git commit -m "Merge Feature 1" --amend
+[master 8bb9135] Merge Feature 1
+ Date: Thu May 2 01:58:45 2024 +0700
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git add .
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git commit -m "Merge Feature 1" --amend
+[master b89afe6] Merge Feature 1
+ Date: Thu May 2 01:58:45 2024 +0700
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --all --graph
+*   commit b89afe605a7321be4c5de8948552459371161f9b (HEAD -> master)
+|\  Merge: ba28532 6b54a08
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:58:45 2024 +0700
+| |
+| |     Merge Feature 1
+| |
+| * commit 6b54a0834e299fa3dfd74be62cacb9f0042acbcf (feature1)
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:55:34 2024 +0700
+| |
+| |     Feature done
+| |
+| * commit bf5be18997ca0e91b286160df7e88a391026011f
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:49:59 2024 +0700
+| |
+| |     Feature commit 2
+| |
+| * commit bd252304b042c30bab3e1933405e0a46663ad8f1
+| | Author: guuhi <winterlab04@gmail.com>
+| | Date:   Thu May 2 01:49:30 2024 +0700
+| |
+| |     Feature commit 1
+| |
+* | commit ba28532e836dd09c2a85ad8eb166512e488188b8
+|/  Author: guuhi <winterlab04@gmail.com>
+|   Date:   Thu May 2 01:51:44 2024 +0700
+|
+PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3>
