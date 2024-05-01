@@ -384,3 +384,4 @@ PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3> git log --
 |   Date:   Thu May 2 01:51:44 2024 +0700
 |
 PS C:\Users\Whitney\Documents\MINE\CODING\Git Practice\git-tutorial3>
+
